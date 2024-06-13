@@ -1,6 +1,5 @@
 class _(type):
     _ = 1
-    @property
     def ___(___):
         if not hasattr(___, '__'):
             ___.__ = [[_._]]
@@ -12,15 +11,15 @@ class _(type):
                 ______ += [_._]
                 ___.__ += [______]
 
-        return lambda __: ___.__[:__]
+        return lambda _, __: ___.__[:__]
 
     def __new__(__, *___):
         x = super().__new__(__, *___)
-        x.generate = _.___
+        x.generate = _.___(_)
         return x
 
 
-class Solution(metaclass=_): pass
+class Solution(metaclass=_):  pass
 
 
 """Shakespeare
