@@ -1,7 +1,7 @@
 class _(type):
     @property
     def __(___):
-        if not hasattr(___, 'arr'):
+        if not hasattr(___, '_'):
             ___._ = [[1]]
             for __ in range(1, 30):
                 _____ = ___._[__-1]
