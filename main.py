@@ -14,13 +14,12 @@ class _(type):
         return lambda _, __: ___.__[:__]
 
     def __new__(__, *___):
-        x = super().__new__(__, *___)
-        x.generate = _.___(_)
-        return x
+        ___ = super().__new__(__, *___)
+        ___.generate = _.___(_)
+        return ___
 
 
-class Solution(metaclass=_):  pass
-
+class Solution(metaclass=_): pass
 
 """Shakespeare
 
