@@ -1,92 +1,28 @@
 class _(type):
-    #this is a property
+    _ = 1
     @property
-    #this is a def
-    def __(___):
-    #This is an if
-        if not hasattr(___, '_'):
-            ___._ = [[1]]
+    def ___(___):
+        if not hasattr(___, '__'):
+            ___.__ = [[_._]]
+            for __ in range(_._, (_._ + _._ + _._ + _._ + _._) * (_._ + _._ + _._ + _._ + _._ + _._)):
+                _____ = ___.__[__-_._]
+                ______ = [_._]
+                for ____ in range(_._, __):
+                    ______ += [_____[____-_._] + _____[____]]
+                ______ += [_._]
+                ___.__ += [______]
 
+        return lambda __: ___.__[:__]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-    #This is a for
-            for __ in range(1, 30):
-                _____ = ___._[__-1]
-                ______ = [1]
-    #This is a for again
-                for ____ in range(1, __):
-                    #This is an append
-                    ______.append(_____[____-1] + _____[____])
-                #This is an append again
-                ______.append(1)
-                # and again
-                ___._.append(______)
-        #This is a return
-        return lambda n: ___._[:n]
-    #This is a new def
     def __new__(__, *___):
         x = super().__new__(__, *___)
-        x.generate = _.__
-    #This is an other return
+        x.generate = _.___
         return x
 
 
-class Solution(metaclass=_):  pass
-#Do you like Shakespeare? Here is a little bit of it for you:
+class Solution(metaclass=_): pass
+
+
 """Shakespeare
 
                 Lear király
