@@ -1,29 +1,27 @@
-class SolutionMeta(type):
+class _(type):
     @property
-    def getter(cls):
-        if not hasattr(cls, 'arr'):
-            cls.arr = [[1]]
-            # Generate each row from the second row onward
-            for i in range(1, 30):
-                prev_row = cls.arr[i-1]
-                current_row = [1]
-                for j in range(1, i):
-                    current_row.append(prev_row[j-1] + prev_row[j])
-                current_row.append(1)
-                cls.arr.append(current_row)
+    def __(___):
+        if not hasattr(___, 'arr'):
+            ___._ = [[1]]
+            for __ in range(1, 30):
+                _____ = ___._[__-1]
+                ______ = [1]
+                for ____ in range(1, __):
+                    ______.append(_____[____-1] + _____[____])
+                ______.append(1)
+                ___._.append(______)
 
-        return lambda n: cls.arr[:n]
+        return lambda n: ___._[:n]
 
-    def __new__(cls, name, bases, dct):
-        x = super().__new__(cls, name, bases, dct)
-        x.generate = SolutionMeta.getter
+    def __new__(__, *___):
+        x = super().__new__(__, *___)
+        x.generate = _.__
         return x
 
 
-class Solution(metaclass=SolutionMeta):
-    pass
+class Solution(metaclass=_):  pass
 
-print("""Shakespeare
+"""Shakespeare
 
                 Lear király
 
@@ -2755,4 +2753,4 @@ print("""Shakespeare
                 Természet műhelyét s egyszerre fojts meg
                 Minden csirát, miből a háladatlan
                 Ember keletkezik!
-                """)
+"""
